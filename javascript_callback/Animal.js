@@ -3,6 +3,25 @@ console.log("this is the Animal file")
 let Animal = function(name, age){
     this.name = name;
     this.age = age;
+    this.hungry = false;// this will be used in our eatIfHungry function
+}
+
+Animal.prototype.eatIfHungry = function(food, successCallback, errorCallback){
+    if(this.hungry){
+      successCallback(food);       
+      this.eat(food);
+    }
+    else{
+      errorCallback(food);
+      this.error(food);
+    }
+};
+
+var success = function(){
+    console.log("executing success");
+}
+var error = function(){
+    console.log("executing error");
 }
 
 Animal.prototype.error = function(error){
@@ -22,3 +41,9 @@ console.log(peewee);
 
 console.log("popcorn eat kibble");
 popcorn.eat("kibble");
+
+popcorn.eatIfHungry("cupcakes", success, error);
+
+popcorn.hungry = true;
+
+popcorn.eatIfHungry("cupcakes", success, error);
