@@ -12,7 +12,7 @@ function getRoute1(){
      {
        dataType: 'json',
        type: 'GET',
-       url: 'http://localhost:4567/route1',
+       url: 'http://localhost:9393/route1',
      }
    );
    $request.then(
