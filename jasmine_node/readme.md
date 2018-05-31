@@ -1,7 +1,3 @@
-# https://jasmine.github.io/2.0/node.html
+# https://stackoverflow.com/questions/33709724/how-to-install-and-run-npm-jasmine-locally?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa
 
-npm is node package manager
-
-we did npm init
-which  
-we installed jasmine 
+going through some jasmine this is the best example that I found
