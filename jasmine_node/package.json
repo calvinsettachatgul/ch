@@ -1,7 +1,7 @@
 {
   "name": "jasmine_node",
   "version": "1.0.0",
-  "description": "",
+  "description": "https://jasmine.github.io/pages/getting_started.html",
   "main": "index.js",
   "scripts": {
     "test": "jasmine"
