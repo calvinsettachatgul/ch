@@ -1,0 +1,11 @@
+{
+  "name": "javascript_prototype",
+  "version": "1.0.0",
+  "description": "# this time lets do it with requiring modules",
+  "main": "Person.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
