@@ -1,5 +1,8 @@
+
 // lets work with an options hash
-//
+
+let PersonMethods = require('./PersonMethods');
+
 let Person = function(opts){
   this.firstName = opts.firstName;
   this.lastName = opts.lastName;
