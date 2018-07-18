@@ -3,10 +3,29 @@ var assert = chai.assert;
 
 
 describe('Array', function() {
-      it('should start empty', function() {
-                  var arr = [];
-
-                  assert.equal(arr.length, 0);
-                });
+  it('should start empty', function() {
+    var arr = [];
+    assert.equal(arr.length, 0);
+  });
 });
 
+describe('Array#push', function(){
+  it('should push an element onto an array',function(){
+    let arr = [];
+    arr.push(1)
+    assert.equal(JSON.stringify(arr),JSON.stringify([1]));
+    assert.equal(arr.length,1);
+    assert.equal(arr[0],1);
+  });
+});
+
+describe('Array#pop', function(){
+  it('should pop off the last element of an array', function(){
+    let arr = [1];
+    arr.pop();
+    assert.equal(arr.length, 0);
+    assert.equal(JSON.stringify(arr),JSON.stringify([]));
+    assert.equal(arr[0],undefined);
+
+  })
+})
