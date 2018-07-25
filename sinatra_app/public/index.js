@@ -1,4 +1,5 @@
 window.onload = init;
+/* global $*/
 
 function init() {
   console.log("JavaScript is ready.");
