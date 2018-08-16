@@ -1,4 +1,4 @@
-window.load = init;
+window.onload = init;
 
 function init(){
     ready();
