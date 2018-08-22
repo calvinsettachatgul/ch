@@ -1,5 +1,6 @@
 require 'sinatra'
 require 'json'
+require 'sinatra/reloader' if developemnt?
 
 get '/' do
   erb :index
