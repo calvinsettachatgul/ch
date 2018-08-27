@@ -42,3 +42,32 @@ for(let i=0; i < fruits.length; i++){
 }
 
 console.log(names);
+
+let sizes = [];
+
+for(let i = 0; i < fruits.length; i++){
+  sizes.push(fruits[i]["size"]);
+}
+
+console.log(sizes);
+
+let colors = [];
+let red = "red"
+let length = red.length;
+
+for(let i = 0; i < fruits.length; i++){
+  // I want to iterate through the fruits
+  // if(colors[i]["color"].length > length ){
+  // if( string > 3characters)
+  if( fruits[i]["color"].length > length ){
+    colors.push(fruits[i]["color"])
+  }
+  
+  // condition to push is the string is longer than 3 characters
+  // condition
+   
+  //at each iteration I want to push the fruits into the colors array
+  // work
+}
+
+console.log(colors);
