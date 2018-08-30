@@ -9,7 +9,7 @@ function counter(counterStart){
     return {
                 viewCounter, 
                 incrementCounter
-            };
+           };
 }
 
 let counter1 = counter(0);
@@ -27,3 +27,5 @@ console.log("this is counter2");
 counter2.viewCounter();
 counter2.incrementCounter();
 counter2.viewCounter();
+
+console.log(counter1.counter)
