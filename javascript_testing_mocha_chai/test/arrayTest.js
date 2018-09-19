@@ -4,6 +4,10 @@ let expect = chai.expect;
 
 
 describe('Array', function() {
+  beforeEach(function(done){
+    console.log('testing array');
+    done();
+  });
   
   describe('Array#new', function(){
     it('should start empty', function() {
