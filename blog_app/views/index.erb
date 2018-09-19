@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ArticleAmazing</title>
+    </head>
+    <body>
+        <h1>ARTICLEamazing</h1>
+        <% if @articles %>
+        <ul>
+        <% @articles.each do |article| %>
+          <li><%= article =%></li>
+        <% end %>
+        </ul>
+        <% end %>
+    </body>
+</html>

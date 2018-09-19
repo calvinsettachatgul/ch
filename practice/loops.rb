@@ -1,4 +1,3 @@
-
 # my_nested = [
 #             [1,2], 
 #             [4,2], 
@@ -24,31 +23,10 @@
 
 
 
-nest = [[1,2], [3,4], [5,6]];
+# nest = [[1,2], [3,4], [5,6]];
 
-nest.each do |first|
-    first.each do |num|
-        print num
-    end
-end
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# nest.each do |first|
+#     first.each do |num|
+#         print num
+#     end
+# end

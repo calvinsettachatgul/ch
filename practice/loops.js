@@ -28,14 +28,26 @@
 
 // console.log(foods);
 
-let petsBehaved = [["dog", "good"], ["cat", "mean"], ["bird", "loud"]];
-let pets = [{}, {}, {}];
+// let petsBehaved = [["dog", "good"], ["cat", "mean"], ["bird", "loud"]];
+// let pets = [{}, {}, {}];
 
-for(let i=0; i < petsBehaved.length; i++){
-    let pet = petsBehaved[i][0];
-    let behaved = petsBehaved[i][1];
-    pets[i]["pet"] = pet;
-    pets[i]["behavior"] = behaved;
+// for(let i=0; i < petsBehaved.length; i++){
+//     let pet = petsBehaved[i][0];
+//     let behaved = petsBehaved[i][1];
+//     pets[i]["pet"] = pet;
+//     pets[i]["behavior"] = behaved;
+// }
+
+// console.log(pets);
+
+let stuff = [[1,2,3,4], ["Mary Bobby", "Henry"], [true, true, false], [1.2, 3.5, 5.7]]
+
+let compiled = []
+
+for(let i = 0; i < stuff.length; i++){
+    for(let j = 0; j < stuff[i].length; j++)
+        compiled.push(stuff[i][j])
 }
 
-console.log(pets);
+// print whether or
+console.log(compiled)
