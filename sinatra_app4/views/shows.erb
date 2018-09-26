@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Upcoming Shows</title>
+    </head>
+    <body>
+        <h1>MuSick</h1>
+        <h2>Upcoming Shows</h2>
+        <ul><% @shows.each do |show| %>
+            <li><%= show =%></li>
+        </ul>
+        <% end %>
+    </body>
+</html>
