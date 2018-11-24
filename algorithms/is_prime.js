@@ -1,4 +1,5 @@
 /*
+https://www.thatjsdude.com/interview/js1.html#isPrime
 1. check Prime
 Question: How would you verify a prime number?
 
