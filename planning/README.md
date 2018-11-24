@@ -3,7 +3,7 @@
 ## Henry
 * apis
 * sinatra
-* loggin in sessions
+* logging in sessions
 
 ## Calvin
 * algorithms
