@@ -25,4 +25,7 @@ Here's what we have so far. Something's going wrong though. Can you tell what it
 HTML
 The syntax is just fine—the problem is some unexpected behavior. 
 
+//
+//this is not really an algorithm problem 
+
 */

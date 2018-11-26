@@ -29,3 +29,5 @@
 //Harshad.get_next(0)          ==>  1
 //Harshad.get_series(3)        ==>  [ 1, 2, 3 ]
 //Harshad.get_series(3, 1000)  ==>  [ 1002, 1008, 1010 ]
+//
+// TODO: add test file
