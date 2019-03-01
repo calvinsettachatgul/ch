@@ -15,6 +15,14 @@ class Building
     def open
         puts 'we are open for business'
     end
+    
+    def come_in
+      puts "Come on in!"
+    end
+  
+    def size
+      @size
+    end
     # getter methods return the variable (get it)
     # def type
     #     @type
