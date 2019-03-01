@@ -1,10 +1,11 @@
 class Building
     # attr_reader :type, :color
     # attr_writer :type, :color
-    attr_accessor :type, :color
+    attr_accessor :type, :color, :size, :rooms
     
     
     def initialize(type, color)
+        @rooms = []
         @type = type
         @color = color
     end
@@ -12,17 +13,12 @@ class Building
     def repaint(wing, floor)
     end
     
-    def open
+    def open_building
         puts 'we are open for business'
     end
     
-    def come_in
-      puts "Come on in!"
-    end
+
   
-    def size
-      @size
-    end
     # getter methods return the variable (get it)
     # def type
     #     @type
@@ -43,79 +39,56 @@ class Building
     
 end
 restaurant = Building.new("restaurant", "black")
-p restaurant
-restaurant.open
-puts restaurant.color   
-puts 'changing color to blue'
-restaurant.color = 'blue'
-puts restaurant.color
-puts restaurant.type
+hotel = Building.new("hotel", "black")
+house = Building.new("home", "black")
+# p restaurant
+# restaurant.open_building
+# puts restaurant.color   
+# puts 'changing color to blue'
+# restaurant.color = 'blue'
+# puts restaurant.color
+# puts restaurant.type
 
 
-class Building
-  attr_reader :size, :color
-  attr_writer :size, :color
+=begin
+use the building class to hold rooms
+rooms will have some attributes
+people (array of people)
+floor (which floor the room is on)
+room number
+number of doors
+number of windows
+airconditioner?
+=end
 
-  def initialize(size, color)
-    @size = size
-    @color = color
-  end
-
-  def come_in
-    puts "Come on in!"
-  end
-
-  def size
-    @size
-  end
-
-  def color
-    @color
-  end
-
-end
-
-class Room < Building
+class Room
+    
+  attr_accessor :people, :floor, :room_number, :door_number, :window_number, :ac
 
   def initialize(people,floor,room_number, number_of_doors, window_number, ac)
-    @people = people
+    @people = []
     @floor = floor
     @room_number = room_number
     @number_of_doors =  number_of_doors
     @window_number = window_number 
     @ac = ac
   end
-
-  def people=(new_people)
-    @people = new_people
-  end
-
-  def floor
-    @floor
-  end
-
-  def room_number
-    @room_number
-  end
-
-  def number_of_doors
-    @number_of_doors
-  end
-
-  def window_number
-    @window_number
-  end
-
-  def ac
-    @ac
+  
+  def come_in
+    puts "Come on in!"
   end
 
 end
 
 bedroom = Room.new(2, 4, 52, 2, 2, "none")
+bedroom.people << "mr jones"
 bedroom.come_in
-p bedroom
-bedroom.people = 1
-p bedroom
-p bedroom.ac
-p bedroom
+# p bedroom
+bedroom.people << 'mr henry'
+# p bedroom
+# p bedroom.ac
+# p bedroom
+
+house.rooms << bedroom
+
+p house
