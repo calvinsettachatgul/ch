@@ -7,6 +7,9 @@
 ## user
 
 # Stories
-A user can create an article
-A user can delete an article
-A user can edit an article
+
+* A user can create an article
+
+* A user can delete an article
+
+* A user can edit an article

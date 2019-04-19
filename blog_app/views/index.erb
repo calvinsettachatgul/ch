@@ -12,5 +12,22 @@
         <% end %>
         </ul>
         <% end %>
+        
+        <% if @users %>
+            <ul>
+            <% @users.each do |user| %>
+              <li><%= user['id'] =%></li>
+              <li><%= user['first_name'] =%></li>
+              <li><%= user['last_name'] =%></li>
+              <li><%= user['email'] =%></li>
+              <ul>
+                <% user['articles'].each do |article| %>
+                  <li><%= article['title'] =%></li>
+                  <li><%= article['text'] =%></li>
+                <% end %>
+              </ul>
+            <% end %>
+            </ul>
+        <% end %>
     </body>
 </html>

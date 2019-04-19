@@ -1,0 +1,50 @@
+{
+    "data": {
+        "users": [
+            {
+                "id": 1,
+                "first_name": "calv",
+                "last_name": "sett",
+                "email": "calvsett@example.com",
+                "articles":[
+                    {
+                        "title": "my great article",
+                        "text": "award winning article"
+                    },
+                    {
+                        "title": "best meatloaf",
+                        "text": "this is the recipe for the best meatloaf you'll ever have"
+                    }
+                ]
+            },
+            {
+                "id": 2,
+                "first_name": "henr",
+                "last_name": "vega",
+                "email": "henrvega@example.com",
+                "articles":[
+                    {
+                        "title": "henrys first article",
+                        "text": "my article text"
+                    }
+                ]
+            },
+            {
+                "id": 3,
+                "first_name": "testfirst",
+                "last_name": "testlast",
+                "email": "testfirsttestlast@example.com",
+                "articles":[
+                    {
+                        "title": "arttittest1",
+                        "text": "arttexttest1"
+                    },
+                    {
+                        "title": "arttittest2",
+                        "text": "arttexttest2"
+                    }
+                ]
+            }
+        ]
+    }
+}
